@@ -1,0 +1,17 @@
+.search {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 70%;
+}
+.btn-group-vertical {
+    align-content: center;
+    margin-top: 60px;
+    margin-left:30px;
+    width: 70%;
+    
+
+}
+.btn-lg {
+    /* width: 100%; */
+    border: 1px solid blue;
+}

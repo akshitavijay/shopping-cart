@@ -1,0 +1,19 @@
+.heading {
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+}
+
+table {
+    /* border: 1px solid; */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+tr {
+    border: 1px solid #ddd;
+}
+td, th {
+    padding: 20px;
+}

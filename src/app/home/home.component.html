@@ -1,0 +1,27 @@
+<br><br><br><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+                <input type="search" placeholder="Search" class="search" aria-label="Search" [(ngModel)]="searchTerm">
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary btn-lg">Categories</button>
+                <button type="button" class="btn btn-primary btn-lg" (click)="fruits()">Fruits</button>
+                <button type="button" class="btn btn-primary btn-lg" (click)="vegetables()">Vegetables</button>
+                <button type="button" class="btn btn-primary btn-lg" (click)="chocolates()">Chocolates</button>
+                <!-- <button type="button" class="btn btn-primary btn-lg" (click)="fruits()">Spices</button> -->
+                <button type="button" class="btn btn-primary btn-lg" (click)="bread()">Bread</button>
+              </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="col-md-4 card" *ngFor= "let product of products | productfilter:searchTerm" style="float:left;margin:20px">
+                <img class="card-img-top" src="{{product.img}}" alt="Card image cap" style="width:100%">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.title}}</h5>
+                    <p class="card-text">{{product.description}}</p>
+                    <p class="card-text">Rs.{{product.price}}</p>
+                    <a class="btn btn-primary btn-lg" (click)="addToCart()">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

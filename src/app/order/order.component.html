@@ -1,0 +1,47 @@
+<br><br><br><br><br>
+
+<h2 class="heading">Shipping</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <p>
+                    <label>Name <span>*</span></label><br>
+                    <input type="text" name="name" required class="fields"/>
+                </p>
+                <p>
+                    <label>Address*</label><br>
+                    <input type="text" name="address" placeholder="line1" required class="fields"><br><br>
+                    <input type="text" name="address" placeholder="line2" required class="fields">
+                </p>
+                <p>
+                    <label>Email <span>*</span></label><br>
+                    <input type="email" name="email" required class="fields"/>
+                </p>
+                <button type="button" class="btn btn-primary" onclick="window.location.href = '/last'">Place Order</button>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order Summary<br>You Have number in Your Cart</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let cartProduct in cartProducts">
+                        <td>{{cartProduct.quantity}} x {{cartProduct.title}}</td>
+                        <td></td>
+                        <td>{{cartProduct.quantity*cartProduct.price}}</td>
+                    </tr> -->
+                    <tr>
+                        <td>Total</td>
+                        <td>Rs.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

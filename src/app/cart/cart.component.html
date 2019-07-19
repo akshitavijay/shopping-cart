@@ -1,0 +1,47 @@
+<br><br><br><br><br>
+
+<h2 class="heading">Shopping cart</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <table>
+                <thead>
+                    <tr>
+                        <th>You Have {{item.number}} in Your Cart</th>
+                        <th></th>
+                        <th></th>
+                        <th><button type="button" class="btn btn-primary">Clear Cart</button></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Products</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let cartProduct in cartProducts">
+                        <td><img src="{{cartProduct.img}}"></td>
+                        <td>{{cartProduct.title}}</td>
+                        <td>{{cartProduct.quantity}}</td>
+                        <td>{{cartProduct.quantity*cartProduct.price}}</td>
+                    </tr> -->
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                        <td></td>
+                        <td>total</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="button" onclick="window.location.href = '/order'" class="btn btn-primary" style="margin:20px">Check Out</button>
+        </div>
+    </div>
+</div>
+
