@@ -13,6 +13,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { LastComponent } from './last/last.component';
 import { FormsModule } from '@angular/forms';
 import { productfilterPipe } from 'src/app/home/product-filter.pipe';
+import { categoryfilterPipe } from 'src/app/home/category-filter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { productfilterPipe } from 'src/app/home/product-filter.pipe';
     CartComponent,
     OrderComponent,
     LastComponent,
-    productfilterPipe
+    productfilterPipe,
+    categoryfilterPipe
   ],
   imports: [
     BrowserModule,
